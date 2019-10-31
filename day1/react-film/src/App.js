@@ -8,6 +8,8 @@ import FilmDetails from './FilmDetails';
 
 class App extends Component {
   render() {
+
+    console.log('TMDB: ', TMDB);
     return (
       <div className="film-library">
         <FilmListing films={TMDB.films} />
