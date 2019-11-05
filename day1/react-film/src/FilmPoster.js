@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
+const posterPrefix = "https://image.tmdb.org/t/p/w780/";
+
 class FilmPoster extends Component {
     render() {
-        let posterUrl = `https://image.tmdb.org/t/p/w780/` + this.props.poster_path;
+        const posterUrl = posterPrefix + this.props.path;
         
         return (
             <img src={posterUrl} alt="" />
